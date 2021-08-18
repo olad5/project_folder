@@ -8,4 +8,4 @@ from .forms import ContactForm
 
 
 def index(request):
-    return render(request, 'base.html')
+    return render(request, 'resume_app/index.html')
