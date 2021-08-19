@@ -21,4 +21,5 @@ def index(request):
             print(f"Subject is {subject}")
             print(f"From {from_email}")
             print(f"The message is {message}")
-    return render(request, 'resume_app/index.html', {'form': form})
+    # return render(request, 'resume_app/index.html', {'form': form})
+    return render(request, 'base.html', {'form': form})

@@ -1,0 +1,5 @@
+make base.html file
+    should have all of the bootstrap template
+then thank you for contacting us will have the sidebar showing the pictures
+and other links
+    clicking one of these should take you back to '' page
