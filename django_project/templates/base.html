@@ -150,25 +150,19 @@
                     <div class='container'>
                       <div class='row'>
                         <div class='col-sm-4'>
-                            <form class='mb-3' method="post">
-                                {% csrf_token %}
-                                {{ form.as_p }}
-                                <div class="form-actions">
-                                  <button type="submit">Send</button>
-                                </div>
-                            </form> 
+                            <!-- <form class='mb-3' method="post"> -->
+                              <div class='form-group'>
+                                <form class='' method="post">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                    <div class="form-actions">
+                                      <button type="submit">Send</button>
+                                    </div>
+                                </form> 
+                              </div>
                         </div>
                       </div>
                     </div>
-                    <!-- <div class="row"> -->
-                    <!--   <form class='mb-3' method="post"> -->
-                    <!--       {% csrf_token %} -->
-                    <!--       {{ form.as_p }} -->
-                    <!--       <div class="form-actions"> -->
-                    <!--         <button type="submit">Send</button> -->
-                    <!--       </div> -->
-                    <!--   </form> --> 
-                    <!-- </div> --> 
                 </div>
             </section>
             <hr class="m-0" />
