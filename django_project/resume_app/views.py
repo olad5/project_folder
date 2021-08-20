@@ -4,6 +4,7 @@ from django.shortcuts import render
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from .forms import ContactForm
 
 
@@ -21,5 +22,5 @@ def index(request):
             print(f"Subject is {subject}")
             print(f"From {from_email}")
             print(f"The message is {message}")
-    # return render(request, 'resume_app/index.html', {'form': form})
-    return render(request, 'base.html', {'form': form})
+        return render(request, 'resume_app/success.html', {'form': form})
+    return render(request, 'resume_app/index.html', {'form': form})
